@@ -1,5 +1,5 @@
 /* Global Variables */
-let API = '0a024f54b02105bb92c0c2f07a371fc4';
+const API = '0a024f54b02105bb92c0c2f07a371fc4';
 let form =document.getElementById('form')
 // let zip = document.getElementById('zip').value;
 // let url = `http://api.openweathermap.org/data/2.5/weather?zip=${zip}&appid=${API}`;
@@ -77,7 +77,7 @@ const updateUI = async () => {
         console.log('newwwww', addData);
 
         document.getElementById('date').innerHTML = addData.date;
-        document.getElementById('temp').innerHTML = addData.tem;
+        document.getElementById('temp').innerHTML = addData.temp;
         document.getElementById('content').innerHTML = addData.content;
     } catch (e) {
         console.log('e', e);
